@@ -1,0 +1,94 @@
+@import './../../../styles.scss';
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &.bg-blue {
+    background-color: $blue-dark;
+    color: white;
+  }
+
+  &.bg-yellow {
+    background-color: $yellow-dark;
+    color: white;
+  }
+
+  &.bg-gray {
+    background-color: $gray-dark;
+    color: white;
+  }
+
+  &.bg-red {
+    background-color: $red-dark;
+    color: white;
+  }
+
+  &.bg-outline {
+    background-color: transparent;
+    border-color: currentColor;
+    color: currentColor;
+  }
+/*
+
+  &.primary {
+    background-color: #007bff;
+    color: white;
+  }
+
+  &.secondary {
+    background-color: #187000;
+    color: white;
+  }
+
+  &.outline {
+    background-color: transparent;
+    border: 2px solid #d00076c2;
+    color: #d00076c2;
+  }
+*/
+
+  &.large {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  &.medium {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  &.small {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+
+  &.icon {
+    padding-left: 8px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled,
+  &.disabled {
+    cursor: not-allowed;  /* Altera o cursor para indicar que o botão está desabilitado */
+    opacity: 0.5;         /* Reduz a opacidade para indicar que o botão está desabilitado */
+  }
+}
+
+.button-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}

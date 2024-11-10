@@ -1,3 +1,26 @@
+@use '@angular/material' as mat;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Estilos globais */
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Definindo as novas cores */
+$blue-light: #5dade2;
+$blue-dark: #21618c;
+
+$red-light: #f1948a;
+$red-dark: #c0392b;
+
+$yellow-light: #f7dc6f;
+$yellow-dark: #f1c40f;
+
+$gray-light: #bbbbbb;
+$gray-dark: #707b7c;
+
+$pink-light: #f8bbd0;
+$pink-dark: #c2185b;

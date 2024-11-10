@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { AddressFormComponent } from "./components/address-form/address-form.component";
+import { ButtonTestComponent } from "./components/button-test/button-test.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, AddressFormComponent],
+  imports: [CommonModule, RouterOutlet, ButtonTestComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

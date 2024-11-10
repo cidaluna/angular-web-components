@@ -1,0 +1,58 @@
+<section>
+  <h3>Reusable Button Component</h3>
+  <div class="row">
+    <app-void-button
+      [color]="'bg-outline'"
+      [size]="'large'"
+      aria-label="Botão teste"
+      (clicked)="onCancel()">
+    </app-void-button>
+
+    <app-void-button
+      [text]="'Salvar'"
+      [color]="'bg-blue'"
+      [size]="'large'"
+      [icon]="'save'"
+      aria-label="Botão Salvar com ícone"
+      (clicked)="onSave()">
+    </app-void-button>
+
+    <app-void-button
+      [text]="'Editar'"
+      [color]="'bg-outline'"
+      [size]="'large'"
+      [outline]="true"
+      aria-label="Botão editar"
+      (clicked)="onSave()">
+    </app-void-button>
+
+    <app-void-button
+      [text]="'Excluir'"
+      [color]="'bg-red'"
+      [size]="'large'"
+      [icon]="'delete'"
+      aria-label="Botão excluir"
+      (clicked)="onCancel()">
+    </app-void-button>
+
+    <app-void-button
+      [text]="'Cancelar'"
+      [color]="'bg-gray'"
+      [size]="'large'"
+      [icon]="'cancel'"
+      [type]="'reset'"
+      aria-label="Botão cancelar"
+      (clicked)="onCancel()">
+    </app-void-button>
+
+    <app-void-button
+      [text]="'Desabilitado'"
+      [color]="'bg-outline'"
+      [size]="'large'"
+      [type]="'reset'"
+      [disabled]="true"
+      aria-label="Botão desabilitado"
+      (clicked)="onCancel()">
+    </app-void-button>
+  </div>
+</section>
