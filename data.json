@@ -1,0 +1,22 @@
+{
+  "apiUsers": [
+    {
+      "name": "Cida Silva"
+    },
+    {
+      "name": "Joana Oliveira"
+    }
+  ],
+  "apiCards": [
+    {
+      "title": "Título 123",
+      "content": "Principal,232C",
+      "imageUrl": "https://via.placeholder.com/150"
+    },
+    {
+      "title": "Título 324",
+      "content": "Secundário, 456ABC",
+      "imageUrl": "https://via.placeholder.com/150"
+    }
+  ]
+}

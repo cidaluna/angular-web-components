@@ -1,0 +1,45 @@
+<ng-container *ngIf="btnCount === 1; else twoButtons">
+  <!-- Botão Único Single Button  -->
+  <button
+    [ngClass]="buttonClasses"
+    [ngStyle]="buttonStyles"
+    [attr.type]="btnType"
+    (click)="onClick('single')"
+    class="button single-button"
+  >
+    {{ texts[0] || 'Button' }}
+  </button>
+</ng-container>
+
+<ng-template #twoButtons>
+
+  <div class="button-group">
+    <!-- First Button Group -->
+    <button
+    [ngClass]="buttonClasses"
+    [ngStyle]="buttonStyles"
+    [attr.type]="btnType"
+    (click)="onClick('first')"
+    class="button"
+    >
+      @if(btnIcon){
+        <mat-icon class="button-icon">{{ btnIcon }}</mat-icon> <!-- Ícone do Angular Material -->
+      }
+      {{ texts[1] || 'Voltar' }}
+    </button>
+
+    <!-- Second Button Group -->
+    <button
+    [ngClass]="buttonClasses"
+    [ngStyle]="buttonStyles"
+    [attr.type]="btnType"
+    (click)="onClick('second')"
+    class="button"
+    >
+      @if(btnIcon){
+        <mat-icon class="button-icon">{{ btnIcon }}</mat-icon> <!-- Ícone do Angular Material -->
+      }
+      {{ btnSecondTitle }}
+    </button>
+  </div>
+</ng-template>

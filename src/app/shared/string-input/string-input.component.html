@@ -1,0 +1,18 @@
+<div class="block">
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>{{ label }}</mat-label>
+      <input
+        matInput
+        [type]="type"
+        [(ngModel)]="value"
+        [placeholder]="placeholder"
+        (input)="onInputChange()"
+        (blur)="onBlur()"
+      />
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+</div>
+

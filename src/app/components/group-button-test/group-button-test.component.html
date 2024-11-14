@@ -1,0 +1,38 @@
+<section>
+  <h3>Test Group Button</h3>
+  <div class="row">
+
+    <app-void-group-button
+      [btnCount]="1"
+      [btnFirstTitle]="'Voltar'"
+      [btnColor]="'bg-outline'"
+      [btnSize]="'medium'"
+      [btnOutline]="true"
+      aria-label="Botão voltar"
+      (clicked)="onCancel()">
+    </app-void-group-button>
+
+    <app-void-group-button
+      [btnCount]="1"
+      [btnSecondTitle]="'Prosseguir'"
+      [btnColor]="'bg-blue'"
+      [btnSize]="'medium'"
+      [btnType]="'submit'"
+      aria-label="Botão prosseguir desabilitado"
+      (clicked)="onCancel()">
+    </app-void-group-button>
+
+  </div>
+  <div class="row">
+    <app-void-group-button
+      [btnCount]="1"
+      [btnText]="'Redefinir senha'"
+      [btnColor]="'bg-blue'"
+      [btnSize]="'large'"
+      [btnType]="'submit'"
+      [btnDisabled]="true"
+      aria-label="Botão redefinir senha"
+      (clicked)="onSave()">
+    </app-void-group-button>
+  </div>
+</section>

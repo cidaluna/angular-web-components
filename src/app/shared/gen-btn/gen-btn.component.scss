@@ -1,0 +1,30 @@
+button{
+  font-size: 16px;
+}
+
+.btn-small {
+  padding: 4px 8px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.btn-medium {
+  padding: 8px 16px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-large {
+  padding: 12px 24px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.mat-button-basic {
+  border: none;
+  background: none;
+}
+
+.mat-button-outline {
+  border: 1px solid;
+}

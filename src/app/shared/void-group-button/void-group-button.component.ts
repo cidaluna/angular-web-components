@@ -3,20 +3,27 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-void-button',
+  selector: 'app-void-group-button',
   standalone: true,
   imports: [
     CommonModule, //ok
     MatIconModule //ok
-  ],
-  templateUrl: './void-button.component.html',
-  styleUrl: './void-button.component.scss'
+    ],
+  templateUrl: './void-group-button.component.html',
+  styleUrl: './void-group-button.component.scss'
 })
-export class VoidButtonComponent {
+export class VoidGroupButtonComponent {
 
   // Propriedades de entrada
   @Input() btnCount: number = 1;
+  @Input() texts: string[] = ['Button', 'Voltar', 'Prosseguir', 'Login', 'Redefinir senha']; // teste
+
   @Input() btnText: string = 'Button'; // Texto do botão único
+
+  // Agrupados
+  @Input() btnFirstTitle: string = '';
+  @Input() btnSecondTitle: string = '';
+
   @Input() btnIcon?: string;            // Ícone opcional
   @Input() btnSize: 'small' | 'medium' | 'large' = 'medium'; // Tamanho do botão
   @Input() btnColor: 'bg-blue' | 'bg-yellow' | 'bg-gray' | 'bg-red' | 'bg-outline' = 'bg-blue'; // Cor do botão
@@ -63,9 +70,29 @@ export class VoidButtonComponent {
   }
 
   // Método para disparar o evento de clique
-  onClick(): void {
+  onClick2(): void {
     if (!this.btnDisabled) {
       this.clicked.emit();
     }
   }
+
+  onClick(buttonId: string) {
+    if (!this.btnDisabled) {
+      this.clicked.emit();
+      switch (buttonId) {
+        case 'single':
+          console.log("Botão único clicado");
+          break;
+        case 'first':
+          console.log("Primeiro botão do grupo clicado");
+          break;
+        case 'second':
+          console.log("Segundo botão do grupo clicado");
+          break;
+        default:
+          console.log("Outro botão");
+      }
+    }
+  }
+
 }

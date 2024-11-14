@@ -2,55 +2,55 @@
   <h3>Reusable Button Component</h3>
   <div class="row">
     <app-void-button
-      [color]="'bg-outline'"
-      [size]="'large'"
+      [btnColor]="'bg-outline'"
+      [btnSize]="'large'"
       aria-label="Botão teste"
       (clicked)="onCancel()">
     </app-void-button>
 
     <app-void-button
-      [text]="'Salvar'"
-      [color]="'bg-blue'"
-      [size]="'large'"
-      [icon]="'save'"
+      [btnText]="'Salvar'"
+      [btnColor]="'bg-blue'"
+      [btnSize]="'large'"
+      [btnIcon]="'save'"
       aria-label="Botão Salvar com ícone"
       (clicked)="onSave()">
     </app-void-button>
 
     <app-void-button
-      [text]="'Editar'"
-      [color]="'bg-outline'"
-      [size]="'large'"
-      [outline]="true"
+      [btnText]="'Editar'"
+      [btnColor]="'bg-outline'"
+      [btnSize]="'large'"
+      [btnOutline]="true"
       aria-label="Botão editar"
       (clicked)="onSave()">
     </app-void-button>
 
     <app-void-button
-      [text]="'Excluir'"
-      [color]="'bg-red'"
-      [size]="'large'"
-      [icon]="'delete'"
+      [btnText]="'Excluir'"
+      [btnColor]="'bg-red'"
+      [btnSize]="'large'"
+      [btnIcon]="'delete'"
       aria-label="Botão excluir"
       (clicked)="onCancel()">
     </app-void-button>
 
     <app-void-button
-      [text]="'Cancelar'"
-      [color]="'bg-gray'"
-      [size]="'large'"
-      [icon]="'cancel'"
-      [type]="'reset'"
+      [btnText]="'Cancelar'"
+      [btnColor]="'bg-gray'"
+      [btnSize]="'large'"
+      [btnIcon]="'cancel'"
+      [btnType]="'reset'"
       aria-label="Botão cancelar"
       (clicked)="onCancel()">
     </app-void-button>
 
     <app-void-button
-      [text]="'Desabilitado'"
-      [color]="'bg-outline'"
-      [size]="'large'"
-      [type]="'reset'"
-      [disabled]="true"
+      [btnText]="'Desabilitado'"
+      [btnColor]="'bg-outline'"
+      [btnSize]="'large'"
+      [btnType]="'reset'"
+      [btnDisabled]="true"
       aria-label="Botão desabilitado"
       (clicked)="onCancel()">
     </app-void-button>

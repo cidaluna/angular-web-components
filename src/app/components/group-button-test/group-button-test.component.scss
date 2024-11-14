@@ -1,0 +1,24 @@
+h3 {
+  margin-top: 2rem;
+  color: gray;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.row{
+  margin-top: 18px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.single-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.large-button {
+  width: 100%;
+}

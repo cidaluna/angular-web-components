@@ -1,0 +1,14 @@
+
+@if(!singleButton){
+  <div class="single-button-container">
+      <app-gen-btn class="singlebtn" [btnConfig]="singleButton[0]"></app-gen-btn>
+  </div>
+}@else{
+  <div class="couple-button-container">
+    @for(button of coupleButton; track button){
+    <app-gen-btn class="coupleBtn" [btnConfig]="button"></app-gen-btn>
+    }
+  </div>
+}
+
+

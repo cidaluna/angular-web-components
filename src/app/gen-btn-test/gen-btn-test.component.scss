@@ -1,0 +1,38 @@
+.single-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: auto;
+  padding: 5px;
+  background-color: red;
+}
+
+.singlebtn{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+/* Contêiner externo para controlar o layout dos botões do coupleButton */
+.couple-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: auto;
+  padding: 5px;
+  background-color: green;
+  margin: 10px 0px;
+}
+
+.coupleBtn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: auto;
+}

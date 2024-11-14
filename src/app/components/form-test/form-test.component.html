@@ -1,0 +1,33 @@
+<form [formGroup]="formTest" (ngSubmit)="onSubmit()">
+  <app-string-input
+    label="Nome"
+    type="text"
+    placeholder="Digite seu nome"
+    formControlName="userName"
+  ></app-string-input>
+
+  <!-- Exibe a mensagem de erro do Signal diretamente -->
+  <small class="error-message">{{ userNameError$() }}</small>
+
+  <app-string-input
+    label="Email"
+    type="email"
+    placeholder="Digite seu email"
+    formControlName="userEmail"
+  ></app-string-input>
+
+  <!-- Exibe a mensagem de erro do Signal diretamente -->
+  <small class="error-message">{{ userEmailError$() }}</small>
+
+  <app-string-input
+    label="Senha"
+    type="password"
+    placeholder="Digite sua senha"
+    formControlName="userPassword"
+  ></app-string-input>
+
+  <!-- Exibe a mensagem de erro do Signal diretamente -->
+  <small class="error-message">{{ userPasswordError$() }}</small>
+
+  <button mat-raised-button color="primary" type="submit">Enviar</button>
+</form>

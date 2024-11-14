@@ -1,10 +1,12 @@
 <button
   [ngClass]="buttonClasses"
   [ngStyle]="buttonStyles"
-  [attr.type]="type"
+  [attr.type]="btnType"
   (click)="onClick()"
   class="button"
 >
-  <mat-icon *ngIf="icon" class="button-icon">{{ icon }}</mat-icon> <!-- Ícone do Angular Material -->
-  {{ text }}
+  @if(btnIcon){
+    <mat-icon class="button-icon">{{ btnIcon }}</mat-icon> <!-- Ícone do Angular Material -->
+  }
+  {{ btnText }}
 </button>

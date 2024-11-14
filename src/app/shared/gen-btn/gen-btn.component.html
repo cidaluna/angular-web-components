@@ -1,0 +1,19 @@
+<button
+mat-fab extended
+  [ngStyle]="{
+    color: btnConfig.btnColorText,
+    backgroundColor: btnConfig.btnBackgroundColorText
+  }"
+  [disabled]="btnConfig.isDisabled"
+  [ngClass]="{
+    'btn-small': btnConfig.btnSize === 'small',
+    'btn-medium': btnConfig.btnSize === 'medium',
+    'btn-large': btnConfig.btnSize === 'large',
+    'mat-button-basic': btnConfig.isBasicFormat,
+    'mat-button-outline': btnConfig.isOutlineFormat
+  }"
+  (click)="btnConfig.action()"
+>
+  <mat-icon *ngIf="btnConfig.hasIcon">favorite</mat-icon>
+  {{ btnConfig.btnText }}
+</button>
